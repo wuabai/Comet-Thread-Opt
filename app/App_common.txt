@@ -512,3 +512,17 @@ com.miui.home{com.miui.home}=$(format_cpu_ranges "$p_core")
 com.miui.home{RenderThread}=$(format_cpu_ranges "$hp_core")
 com.miui.home{binder*}=$(format_cpu_ranges "$p_core")
 com.miui.home=$(format_cpu_ranges "$e_core $p_core")
+
+# Clash Meta for Android
+com.github.metacubex.clash.meta{Thread-*}=$(format_cpu_ranges "$p_core")
+com.github.metacubex.clash.meta{Binder:*}=$(format_cpu_ranges "$p_core")
+com.github.metacubex.clash.meta{RenderThread}=$(format_cpu_ranges "$p_core")
+com.github.metacubex.clash.meta{ubex.clash.meta}=$(format_cpu_ranges "$p_core")
+com.github.metacubex.clash.meta=$(format_cpu_ranges "$e_core $p_core")
+
+# FlClash
+com.follow.clash{Thread-*}=$(format_cpu_ranges "$p_core")
+com.follow.clash{Binder:*}=$(format_cpu_ranges "$p_core")
+com.follow.clash{*.raster}=$(format_cpu_ranges "$p_core")
+com.follow.clash{om.follow.clash}=$(format_cpu_ranges "$p_core")
+com.follow.clash=$(format_cpu_ranges "$e_core $p_core")
